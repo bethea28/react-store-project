@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Link, Route, Router, hashHistory} from 'react-router'
@@ -11,6 +12,22 @@ import Process from './components/render.js'
 
   
 
+=======
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Router, Route, hashHistory, IndexRoute} from 'react-router';
+import 'bootstrap/dist/css/bootstrap.css';
+import './index.css';
+import BrandStory from './components/BrandStory';
+import Footer from './components/Footer';
+import ItemPage from './components/ItemPage';
+import Header from './components/Header';
+import HomePage from './components/HomePage';
+import LookBookPage from './components/LookBookPage';
+import SalePage from './components/SalePage';
+import ShopPage from './components/ShopPage';
+import NavBar from './components/NavBar';
+>>>>>>> 90eab54419eb7f47f2e9afdc93b9a8afac49aa5f
 
 var App = React.createClass({
 
@@ -178,6 +195,7 @@ resetSyll(){
 render(){
 
     return (
+<<<<<<< HEAD
         <center>
       {console.log(this.state.background)}
           <h1>Flow Tite</h1> 
@@ -192,6 +210,14 @@ render(){
 
         </center>
             
+=======
+      <div className="container-fluid">
+        <Header />
+        <NavBar />
+        {this.props.children}
+        <Footer />
+      </div>
+>>>>>>> 90eab54419eb7f47f2e9afdc93b9a8afac49aa5f
     )
   }
 })

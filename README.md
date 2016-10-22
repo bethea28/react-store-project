@@ -1,3 +1,53 @@
+ -Components
+      1.Home
+      2.Shop
+      3.Brand Story
+      4.Lookbook
+      5.Sale
+      6.NavBar
+      7.Warranty---
+      8-Item-
+ MainDisplay :
+    -Header
+      1.Logo
+      2.Title
+      3.NavBar(component)
+      4.Contact Icons(optional)
+      {this.porps.childrend} -- All other Components Routed through MainDisplay
+    -Footer
+      1.Contact Info
+      2.Warranty(component)
+Components :
+  -NavBar --
+     -Links(Home,Shop,BrandStory,LookBook,Sale)
+  -Shop(DropDown Menu with list of categories:
+       Classic Ties, Classic BowTies,  DecadenceTies, Decadence-Bow-Ties)  
+  -Home
+    Slide(carosel(clickable=>routes to specific category))
+  -Brand Story ---Bryan
+    1.Mission
+    2.Story
+    3.Brand
+    4.About -Designer
+  -LookBook 
+    1.Images
+    2.Carosel
+  -Sale
+    1.ToolBar(component)
+      1.View(Grid|List)
+      2.SortBy(Categories|Wood|Price)
+    2.Grid|List Thumbnail View Of Items
+  -Shop Categories(classic bow and regular, decadence bow and regular)
+    1.Intro Div - Has an image and short description of category
+    2.ToolBar(component)
+    3.Grid|List Items
+  -ToolBar 
+    1.View(Grid|List)
+    2.SortBy(Categories|Wood|Price)
+  -Footer
+  -Header
+
+
 This project was forked from [Create React App](https://github.com/facebookincubator/create-react-app) and has been modified to use mostly ES5 (instead of ES6).
 
 Below you will find some information on how to perform common tasks.  
